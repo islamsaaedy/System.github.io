@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <title>SuperMarket System</title>
+</head>
+
+<body>
+    <div class="system">
+        <div class="head">
+            <h2>Super Market</h2>
+            <p>welcome to my System</p>
+        </div>
+        <div class="inuput">
+            <input type="text" id="Title" placeholder="Title">
+            <div class="preice">
+                <input onkeyup="GetTotla()" type="number" id="price" placeholder="price">
+                <input onkeyup="GetTotla()" type="number" id="discount" placeholder="discount">
+                <samll id="total"></samll>
+            </div>
+            <div class="packet">
+                <input type="number" id="NumberOfpacket" placeholder="Number Of Thispacket ">
+                <input type="number" id="NumberOfThisType" placeholder="Number Of ThisType">
+            </div>
+            <input type="number" id="conter" placeholder="Conter" style="display:none;">
+            <input type="text" id="catgory" placeholder="catgory">
+            <button id="sbumit"> Create </button>
+        </div>
+        <div class="output">
+            <div class="searchBlock">
+                <input onkeyup="serachData(this.value)" type="text" id="serach" placeholder="Serach">
+                <div class="buttonSer">
+                    <button onclick="SerachMoods(this.id)" id="sereachTitle">search by Title</button>
+                    <button onclick="SerachMoods(this.id)" id="sereachcatgory">search by catgory</button>
+                </div>
+            </div>
+            <div id="deleteAll"></div>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                    <th>Number Of ThisType</th>
+                    <th>Number Of packet</th>
+                    <th>catgory</th>
+                    <th>UpDate</th>
+                    <th>Delate</th>
+                    <th>Buying Ty</th>
+                    <th>Buying PA</th>
+                </tr>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="master.js"></script>
+</body>
+
+</html>

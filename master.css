@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.system {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.head h2 {
+    margin: 10px 0;
+    font-size: 25px;
+    color: #00ffffd6;
+}
+
+.head p {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 4px 0;
+    padding: 4px;
+    color: #fff;
+    background-color: #222;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+input:focus {
+    background-color: #111;
+    transform: scale(1.02);
+}
+
+.preice input {
+    width: 45%;
+}
+
+#total {
+    background-color: #28bdbdd6;
+    padding: 4px 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#total::before {
+    content: "Total : ";
+}
+
+button {
+    width: 100%;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #2cafafd6;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00ffffd6;
+}
+
+.buttonSer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+}
+
+.buttonSer button {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+#deleteAll {
+    margin: 10px auto;
+    width: 80%;
+}
+
+#serach {
+    display: none;
+}
+
+.packet input {
+    width: 48%;
+}
